@@ -13,6 +13,11 @@ public class MyMain {
 
 		canvas.addKeyListener(a);
 		canvas.addGameObject(a);
+		
+		Type_B_GameObject b = new Type_B_GameObject(600,600);
+		
+		canvas.addKeyListener(b);
+		canvas.addGameObject(b);
 
 		Type_C_GameObject c = new Type_C_GameObject(200, 200);
 
@@ -24,10 +29,10 @@ public class MyMain {
 		canvas.addKeyListener(d);
 		canvas.addGameObject(d);
 		
-		Type_B_GameObject b = new Type_B_GameObject(600,600);
+		Type_E_UniqueObject e = new Type_E_UniqueObject (100,100);
+		Type_E_Adapter e2 = new Type_E_Adapter(e);
 		
-		canvas.addKeyListener(b);
-		canvas.addGameObject(b);
+		canvas.addGameObject(e2);
 
 	}
 

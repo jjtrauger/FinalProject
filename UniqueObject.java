@@ -5,7 +5,7 @@ import java.awt.Graphics;
 import java.util.List;
 import javax.swing.Icon;
 
-public abstract class GameObject {
+public abstract class UniqueObject {
 	// EACH GAME OBJECT HAS AN X,Y LOCATION, VELOCITY, AND A DIRECTION
 
 	private int x;
@@ -18,12 +18,12 @@ public abstract class GameObject {
 	protected List<Icon> imageList;
 	protected int currentImage;
 
-	public GameObject(int x, int y) {
+	public UniqueObject(int x, int y) {
 		this.x = x;
 		this.y = y;
 		velocity = 0;
 		currentImage = 0;
-		setHighlight(false);
+		highlight = false;
 	}
 
 	public void draw(Component c, Graphics g) {
@@ -71,20 +71,12 @@ public abstract class GameObject {
 		this.highlight = b;
 	}
 	public boolean getHighlight() {
-		return isHighlight();
+		return highlight;
 	}
 
 	// ABSTRACT METHODS
 	public abstract void move(Canvas c);
 
 	public abstract void setImage();
-
-	public boolean isHighlight() {
-		return highlight;
-	}
-
-	public void setHighlight(boolean highlight) {
-		this.highlight = highlight;
-	}
 
 }
