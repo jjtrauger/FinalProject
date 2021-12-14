@@ -1,0 +1,11 @@
+All files for the final project are in the src/trauger and images folder. I wanted a unique class to adapt,
+so I used an adapter class to combine elements of gameobject move function and the unique class' diagonal movement, birthing the E object.
+I am tempted to make it bounce around like a TV logo and I just might. As of now, it has diagonal back and forth moevement unless selected, in which case it ceases
+all movement. It is the opposite of the D class implemented using the adapter class.
+
+All other files are archaic version of files I used, either to build upon or collaborate with other classmates.
+
+I collaborated with Justin, Paetin, Arhim, and Yurika, but all code was written entirely originally or applied and adjustedfor personal application.
+
+Some methods were suggested by the final skeleton provided, so I left them in but often preferred other ways (such as the setImage() which I only used for
+two objects).
